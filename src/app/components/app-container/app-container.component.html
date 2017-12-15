@@ -1,0 +1,36 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">ShoppingCart</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a [routerLink]="['/app/home']">Home</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/app/cart']">Cart</a>
+                </li>
+                <li class="dropdown">
+                    <a [routerLink]="['/app/task1']">task 1</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/app/task2']">task 2</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="page-header" id="banner">
+        <router-outlet></router-outlet>
+    </div>
+</div>
